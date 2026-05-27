@@ -46,7 +46,7 @@ class _ColorBar(Flowable):
 # ---------- 样式 ----------
 
 def _make_styles() -> dict:
-    base = {"fontName": "STSong-Light", "leading": 16}
+    base = {"fontName": "STSong-Light", "leading": 16, "wordWrap": "CJK"}
     return {
         "toc_title": ParagraphStyle("toc_title", fontSize=16, alignment=TA_CENTER,
                                      textColor=PRIMARY, spaceAfter=8, **base),
@@ -84,7 +84,8 @@ def _make_styles() -> dict:
                                             textColor=PRIMARY, spaceAfter=6, **base),
         "disclaimer_body": ParagraphStyle("disclaimer_body", fontSize=9,
                                            textColor=HexColor("#666666"),
-                                           fontName="STSong-Light", leading=14),
+                                           fontName="STSong-Light", leading=14,
+                                           wordWrap="CJK"),
     }
 
 
