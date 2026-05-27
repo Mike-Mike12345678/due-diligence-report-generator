@@ -319,7 +319,7 @@ class PDFEngine:
             canvas.rect(0, 0, w, h, fill=1, stroke=0)
             canvas.setFillColor(HexColor("#ffffff"))
             canvas.setFont("STSong-Light", 14)
-            canvas.drawCentredString(w / 2, h - 70 * mm, "软 通 计 算")
+            canvas.drawCentredString(w / 2, h - 70 * mm, "软 通 动 力")
             canvas.setStrokeColor(HexColor("#ffffff"))
             canvas.setLineWidth(0.5)
             canvas.line(w / 2 - 25 * mm, h - 78 * mm, w / 2 + 25 * mm, h - 78 * mm)
@@ -330,7 +330,7 @@ class PDFEngine:
             canvas.setFillColor(HexColor("#c8d2e6"))
             canvas.setFont("STSong-Light", 11)
             canvas.drawCentredString(w / 2, h - 195 * mm, f"报告日期：{report_date}")
-            canvas.drawCentredString(w / 2, h - 205 * mm, "软通计算信息技术（集团）股份有限公司")
+            canvas.drawCentredString(w / 2, h - 205 * mm, "软通动力信息技术（集团）股份有限公司")
             canvas.restoreState()
 
         def on_later_pages(canvas, doc):

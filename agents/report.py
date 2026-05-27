@@ -153,7 +153,7 @@ class ReportAgent:
                 ],
             },
             {
-                "title": "与软通计算的合作切入点",
+                "title": "与软通动力的合作切入点",
                 "number": "04",
                 "sections": coop_sections,
             },
