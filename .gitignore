@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+config.yaml
+output/*.pdf
+output/*.json
+output/*.html
+.env
+build/
+dist/
+*.egg-info/
+.DS_Store

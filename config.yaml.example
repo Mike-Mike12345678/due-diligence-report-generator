@@ -1,0 +1,26 @@
+# 客户尽调报告生成器 - 配置文件
+# 复制为 config.yaml 并填入你的 API Key
+
+llm:
+  api_key: "your-api-key-here"
+  base_url: "https://open.bigmodel.cn/api/paas/v4"
+  model: "glm-4-flash"          # 默认模型（信息搜集用，速度快）
+  model_advanced: "glm-4-plus"   # 高级模型（分析、报告生成用，质量高）
+  max_tokens: 4096
+  temperature: 0.3
+
+search:
+  api_key: "your-tavily-api-key-here"
+  max_results: 5                # 每次搜索返回结果数
+  search_depth: "basic"         # basic 或 advanced
+  include_raw_content: false
+  timeout: 30
+
+report:
+  language: "zh"
+  output_dir: "./output"
+
+pipeline:
+  max_research_rounds: 3
+  retry_on_failure: 2
+  verbose: true
